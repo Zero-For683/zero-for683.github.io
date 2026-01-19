@@ -1,31 +1,25 @@
-title: Gabriel Barbir (Zero-For683)
-description: Cybersecurity writeups, labs, and notes for learning and portfolio purposes
-url: https://ZeroFor-683.github.io
+title: Gabriel Barbir
+description: Cybersecurity writeups focused on detection engineering, threat hunting, and offensive security.
+url: https://zero-for683.github.io
 
-remote_theme: mmistakes/minimal-mistakes@4.26.2
+minimal_mistakes_skin: dark
+
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
-author:
-  name: Gabriel Barbir
-  avatar: /assets/images/avatar.png
-  bio: "Cybersecurity Analyst | OSCP | Threat Hunting & Detection"
-  links:
-    - label: LinkedIn
-      icon: fab fa-linkedin
-      url: https://www.linkedin.com/in/gabriel-barbir/
-    - label: GitHub
-      icon: fab fa-github
-      url: https://github.com/ZeroFor-683
+masthead_title: "Gabriel Barbir"
+breadcrumbs: true
 
+header:
+  nav: true
 
 navigation:
-  - title: About
-    url: /about/
-  - title: Writeups
+  - title: "Writeups"
     url: /categories/
-  - title: Projects
+  - title: "Projects"
     url: /projects/
+  - title: "About"
+    url: /about/
