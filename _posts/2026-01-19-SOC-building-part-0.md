@@ -4,8 +4,10 @@ categories:
   - "[homelab, tooling, blue-teaming]"
 tags:
 classes: narrow
-toc: "true"
-toc_sticky: "true"
+toc: true
+toc_sticky: true
+layout: single
+read_time: true
 ---
 
 ## What this project is
