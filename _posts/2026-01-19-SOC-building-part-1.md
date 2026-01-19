@@ -1,9 +1,7 @@
 ---
-title: "BLOG POST EXAMPLE # 2"
+title: Building a SOC From Scratch
 categories:
   - incident-response
 tags:
   - example
 ---
-Content here.
-hellooo there
