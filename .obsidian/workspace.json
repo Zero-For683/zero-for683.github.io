@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "categories.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "categories"
+              "title": "README"
             }
           },
           {
@@ -211,15 +211,15 @@
   },
   "active": "d6fc88bc0ea52cf7",
   "lastOpenFiles": [
-    "about.md",
     "README.md",
+    "_posts/2026-01-19-SOC-building-part-1.md",
+    "categories.md",
+    "about.md",
     "_posts/2026-01-19-post.md",
     "writeups.md",
     "_data/navigation.yml",
     "_data",
-    "_posts/2026-01-19-SOC-building-part-1.md",
     "projects.md",
-    "categories.md",
     "index.md"
   ]
 }

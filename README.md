@@ -18,3 +18,4 @@ Here are some main categories to sort blogs by:
 - `malware-analysis`
 - `homelab`
 - `tooling`
+- `blue-teaming`
