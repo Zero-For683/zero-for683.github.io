@@ -1,1 +1,10 @@
-theme: minima
+title: Gabriel Barbir (Zero-For683)
+description: Cybersecurity writeups, labs, and notes for learning and portfolio purposes
+url: https://ZeroFor-683.github.io
+
+remote_theme: mmistakes/minimal-mistakes@4.26.2
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
