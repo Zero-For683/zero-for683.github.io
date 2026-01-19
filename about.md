@@ -3,12 +3,18 @@ title: About
 layout: single
 permalink: /about/
 author_profile: true
+toc: true
+toc_sticky: true
 ---
 
-https://www.linkedin.com/in/gabriel-barbir/
+## What I do
+I’m a cybersecurity analyst focused on SOC operations, threat hunting, and detection engineering, with an OSCP background and experience building security capabilities in simulated enterprise environments.
 
-I’m a cybersecurity analyst with hands-on experience across SOC operations, threat hunting, and offensive security. I hold the Offensive Security Certified Professional (OSCP) certification and currently work through an intensive apprenticeship focused on building and operating security capabilities in simulated enterprise environments. I also maintain an active Secret clearance.
+## Strengths
+- Incident response: triage, scoping, and timeline building  
+- Log + PCAP analysis  
+- Detection engineering concepts and alert tuning  
+- Windows + Linux tradecraft and telemetry mapping
 
-My background includes incident response, log and PCAP analysis, detection engineering concepts, and end-to-end attack simulations across Windows and Linux systems. I focus on understanding how attacks work in practice, how they appear in telemetry, and how defenders can detect, respond to, and remediate them effectively.
-
-This blog documents my work building and operating a SOC, conducting investigations, developing detections, and analyzing adversary behavior. The goal is to produce clear, practical writeups that emphasize reasoning, tradeoffs, and lessons learned rather than step-by-step walkthroughs or tool-specific tutorials.
+## What you’ll find here
+Writeups that emphasize reasoning, evidence, remediation steps, and defensive takeaways (not just step-by-step walkthroughs).
