@@ -8,3 +8,24 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+
+author:
+  name: Gabriel Barbir
+  avatar: /assets/images/avatar.png
+  bio: "Cybersecurity Analyst | OSCP | Threat Hunting & Detection"
+  links:
+    - label: LinkedIn
+      icon: fab fa-linkedin
+      url: https://www.linkedin.com/in/gabriel-barbir/
+    - label: GitHub
+      icon: fab fa-github
+      url: https://github.com/ZeroFor-683
+
+
+navigation:
+  - title: About
+    url: /about/
+  - title: Writeups
+    url: /categories/
+  - title: Projects
+    url: /projects/
