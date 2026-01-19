@@ -8,7 +8,7 @@ classes: wide
 
 - [Incident Response](/categories/#incident-response)
 - [Threat Hunting](/categories/#threat-hunting)
-- [Detection Engineering](/categories/#detection-engineering)
+- [Blue Teaming](/categories/#blue-teaming)
 - [Offensive Security](/categories/#offensive-security)
 
 ## Recent
