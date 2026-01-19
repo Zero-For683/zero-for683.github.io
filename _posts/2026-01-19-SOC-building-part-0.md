@@ -1,7 +1,7 @@
 ---
 title: Building a SOC From Scratch (Overview)
 categories:
-  - "[homelab, tooling, blue-teaming]"
+  - blue-teaming
 tags:
 classes: narrow
 toc: true
