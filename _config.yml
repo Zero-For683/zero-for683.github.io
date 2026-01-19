@@ -21,7 +21,7 @@ header:
 
 author:
   name: "Gabriel Barbir"
-  bio: "Cybersecurity Analyst | OSCP | Threat Hunting & Detection"
+  bio: "Cybersecurity Analyst • OSCP"
   links:
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
@@ -29,5 +29,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/ZeroFor-683"
+
 
 
