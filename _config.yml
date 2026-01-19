@@ -2,17 +2,30 @@ title: Gabriel Barbir
 description: Cybersecurity writeups focused on detection engineering, threat hunting, and offensive security.
 url: https://zero-for683.github.io
 
-minimal_mistakes_skin: dark
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: dark
 
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 masthead_title: "Gabriel Barbir"
+breadcrumbs: true
 
-defaults:
-  - scope:
-    path: ""
-  values:
-      masthead: true
+# Enable header nav and point it at the "main" menu below
+header:
+  nav: main
+
+# The actual nav items
+main:
+  - title: "Writeups"
+    url: /categories/
+  - title: "Projects"
+    url: /projects/
+  - title: "About"
+    url: /about/
 
 author:
   name: "Gabriel Barbir"
@@ -24,28 +37,3 @@ author:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/ZeroFor-683"
-
-
-plugins:
-  - jekyll-include-cache
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-
-masthead_title: "Gabriel Barbir"
-breadcrumbs: true
-
-header:
-  nav: main
-
-main:
-  - title: "Writeups"
-    url: /categories/
-  - title: "Projects"
-    url: /projects/
-  - title: "About"
-    url: /about/
-
-
-
