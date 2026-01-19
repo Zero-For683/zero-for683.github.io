@@ -10,5 +10,5 @@ header:
     - label: "LinkedIn"
       url: "https://www.linkedin.com/in/gabriel-barbir/"
     - label: "GitHub"
-      url: "https://github.com/ZeroFor-683"
+      url: "[https://github.com/ZeroFor-683](https://github.com/Zero-For683)"
 ---
