@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-01-19-post.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-01-19-post"
+              "title": "index"
             }
           }
         ]
@@ -180,7 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,9 +196,9 @@
   },
   "active": "df7224ea3c457e7c",
   "lastOpenFiles": [
+    "_posts/2026-01-19-post.md",
     "README.md",
     "index.md",
-    "_posts/2026-01-19-post.md",
     "about.md"
   ]
 }
