@@ -21,7 +21,7 @@ The network architecture is designed to clearly illustrate:
 - IP ranges, subnets, VLANs, routing, and firewall placement  
 - Allowed ports and how traffic flows between systems  
 
-![Network-Diagram.drawio](assets/images/Network-Diagram.drawio.png)
+![Network-Diagram.drawio](/assets/images/Network-Diagram.drawio.png)
 
 ## Architecture Breakdown
 
