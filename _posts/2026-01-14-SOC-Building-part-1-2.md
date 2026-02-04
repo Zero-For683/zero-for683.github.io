@@ -3,11 +3,9 @@ title: Building a SOC From Scratch (Part 1) - Profile Building & Operational Due
 categories:
   - blue-teaming
 tags:
-classes: narrow
-toc: true
-toc_sticky: true
-layout: single
-read_time: true
+  - soc
+  - atlas-industrial
+  - wazuh
 ---
 
 

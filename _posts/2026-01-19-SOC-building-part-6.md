@@ -3,11 +3,9 @@ title: Building a SOC From Scratch (Part 5) - Implementing applications
 categories:
   - blue-teaming
 tags:
-classes: narrow
-toc: true
-toc_sticky: true
-layout: single
-read_time: true
+  - soc
+  - docker
+  - wazuh
 ---
 
 With the theory and planning behind us, it was time to move into implementation. As a newer team with limited hands-on experience, we quickly learned that some earlier decisions needed to be revisited. Time constraints, overlooked requirements, and simple inexperience meant we had to adjust course more than once. That process, while humbling, was also one of the most valuable learning experiences of the project.

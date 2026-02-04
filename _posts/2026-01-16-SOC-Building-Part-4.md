@@ -3,11 +3,8 @@ title: Building a SOC From Scratch (Part 3) - Designing a Logical & Network Arch
 categories:
   - blue-teaming
 tags:
-classes: narrow
-toc: true
-toc_sticky: true
-layout: single
-read_time: true
+  - soc
+  - network-architecture
 ---
 With threats and risks identified, the next step is to translate that analysis into a concrete design. This stage focuses on defining both the logical and network architecture before implementation begins, allowing us to identify potential gaps, validate assumptions, and address weaknesses early in the design process.
 

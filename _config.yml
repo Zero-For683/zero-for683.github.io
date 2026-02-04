@@ -1,5 +1,5 @@
 title: Gabriel Barbir
-description: Cybersecurity writeups focused on detection engineering, threat hunting, and offensive security.
+description: Cybersecurity Engineer • OSCP • U.S. Navy Veteran — Detection engineering, threat hunting, and SOC operations.
 url: https://zero-for683.github.io
 
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
@@ -13,15 +13,15 @@ plugins:
 
 masthead_title: "Gabriel Barbir"
 breadcrumbs: true
+words_per_minute: 200
 
 # Enable header nav and point it at the "main" menu below
 header:
   nav: main
 
-
 author:
   name: "Gabriel Barbir"
-  bio: "Cybersecurity Analyst • OSCP"
+  bio: "Cybersecurity Engineer • OSCP • U.S. Navy Veteran"
   links:
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
@@ -30,7 +30,14 @@ author:
       icon: "fab fa-github"
       url: "https://github.com/Zero-For683"
 
-
-
-
-
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true

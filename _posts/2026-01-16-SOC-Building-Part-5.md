@@ -3,11 +3,9 @@ title: Building a SOC From Scratch (Part 4) - Identifying Security Measures
 categories:
   - blue-teaming
 tags:
-classes: narrow
-toc: true
-toc_sticky: true
-layout: single
-read_time: true
+  - soc
+  - detection-engineering
+  - access-control
 ---
 ## Overview
 

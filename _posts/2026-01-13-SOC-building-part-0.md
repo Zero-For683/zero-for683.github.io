@@ -3,11 +3,8 @@ title: Building a SOC From Scratch (Overview)
 categories:
   - blue-teaming
 tags:
-classes: narrow
-toc: true
-toc_sticky: true
-layout: single
-read_time: true
+  - soc
+  - blue-team
 ---
 
 This post introduces a multi-part series documenting the design and build-out of a Security Operations Center during my RapidAscent apprenticeship. Each entry focuses on decisions, tradeoffs, and lessons learned rather than tools or step-by-step instructions.

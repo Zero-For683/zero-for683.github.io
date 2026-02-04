@@ -3,11 +3,9 @@ title: THM PyRAT - Exploitation and Remediation
 categories:
   - offensive-security
 tags:
-classes: narrow
-toc: true
-toc_sticky: true
-layout: single
-read_time: true
+  - tryhackme
+  - exploitation
+  - remediation
 ---
 
 

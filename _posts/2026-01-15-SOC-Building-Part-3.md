@@ -3,11 +3,9 @@ title: Building a SOC From Scratch (Part 2) - Organizational Risk Assessment & T
 categories:
   - blue-teaming
 tags:
-classes: narrow
-toc: true
-toc_sticky: true
-layout: single
-read_time: true
+  - soc
+  - threat-modeling
+  - risk-assessment
 ---
 This stage evaluates risk and adversary behavior before implementation begins. By analyzing threats and vulnerabilities upfront, we can integrate security controls as part of the build process rather than retrofitting them later.
 
