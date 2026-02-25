@@ -8,49 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "39d0df8d5ff593c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2026-02-05-Developing-Syncbreeze-Exploit-P1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-02-05-Developing-Syncbreeze-Exploit-P1"
-            }
-          },
-          {
-            "id": "7f0ea590ea1a4c76",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2026-02-05-Developing-Syncbreeze-Exploit-P1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-02-05-Developing-Syncbreeze-Exploit-P1"
-            }
-          },
-          {
             "id": "b93940659cdc173e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-02-06-Developing-Syncbreeze-Exploit-P2.md",
+                "file": "_posts/2026-02-25-Exploiting-SEH-Overflows.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-02-06-Developing-Syncbreeze-Exploit-P2"
+              "title": "2026-02-25-Exploiting-SEH-Overflows"
+            }
+          },
+          {
+            "id": "cb197a22290dcf1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2026-02-25-Exploiting-SEH-Overflows.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-02-25-Exploiting-SEH-Overflows"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -107,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 302.5
   },
   "right": {
     "id": "1ccf6b8defa7bed3",
@@ -223,11 +209,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a671d7bc9d614357",
+  "active": "cb197a22290dcf1c",
   "lastOpenFiles": [
-    "assets/images/seh_first_crash.png",
+    "rough_drafts/RD.md",
+    "_posts/2026-02-25-Exploiting-SEH-Overflows.md",
+    "assets/images/nt_tib_struct.png",
+    "assets/images/teb_struct.png",
     "_posts/2026-02-05-Developing-Syncbreeze-Exploit-P1.md",
+    "assets/images/seh_concept_diagram.png",
+    "assets/images/exception_registration_record_struct.png",
+    "index.md",
+    "rough_drafts",
     "2026-02-06-Developing-Syncbreeze-Exploit-P2.md",
+    "categories.md",
+    "about.md",
+    "assets/images/seh_first_crash.png",
     "Test.md",
     "writeups.md",
     "_posts/2026-01-16-SOC-Building-Part-4.md",
@@ -239,12 +235,7 @@
     "assets/images/buffer_overflow_chart.png",
     "_posts/2026-01-19-SOC-building-part-6.md",
     "_posts/2026-01-16-SOC-Building-Part-5.md",
-    "assets/images/dns-wssrv.png",
-    "assets/images/Pasted image 20260119173058.png",
-    "assets/images/Pasted image 20260119172735.png",
-    "assets/images/Pasted image 20260119173237.png",
     "assets/images/Pasted.md",
-    "assets/images/Pasted image 20260119174858.png",
     "_posts/2026-01-15-SOC-Building-Part-3.md",
     "assets/images",
     "assets",
@@ -253,12 +244,9 @@
     "_posts/2026-01-13-SOC-building-part-0.md",
     "zz-misc-image-folder",
     "README.md",
-    "categories.md",
-    "about.md",
     "_posts/2026-01-19-post.md",
     "_data/navigation.yml",
     "_data",
-    "projects.md",
-    "index.md"
+    "projects.md"
   ]
 }
