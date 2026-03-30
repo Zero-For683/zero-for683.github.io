@@ -23,7 +23,7 @@ Below is a high-level threat model diagram used to visualize early attack paths 
 
 The goal at this stage is not to enumerate every possible attack vector, but to highlight realistic and high-impact paths that warrant deeper analysis during design.
 
-![threat-model-sketch](/assets/images/threat-model-sketch.png)
+![threat-model-sketch](/assets/images/soc-building/threat-model-sketch.png)
 
 
 ## Risk Assessment Using Risk Registers

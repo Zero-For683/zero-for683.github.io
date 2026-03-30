@@ -64,7 +64,7 @@ All traffic for `*.corp.atlas.com` is routed through a single HTTPS-enabled prox
 
 The most challenging part of this setup wasn’t Caddy itself, but DNS. Ensuring that all systems consistently used the Windows Server DNS service required careful configuration and validation across the environment.
 
-![Pasted image 20260124122028.png](/assets/images/dns-wssrv.png)  
+![Pasted image 20260124122028.png](/assets/images/soc-building/dns-wssrv.png)  
 
 ## Firewalls & SSH Certificate Authorities
 

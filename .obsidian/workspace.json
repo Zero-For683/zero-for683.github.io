@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b93940659cdc173e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2026-02-25-Exploiting-SEH-Overflows.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-02-25-Exploiting-SEH-Overflows"
-            }
-          },
-          {
             "id": "cb197a22290dcf1c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-02-25-Exploiting-SEH-Overflows.md",
+                "file": "_posts/2026-03-30-AD-Attack-Lab-Part1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-02-25-Exploiting-SEH-Overflows"
+              "title": "2026-03-30-AD-Attack-Lab-Part1"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,42 +196,48 @@
   },
   "active": "cb197a22290dcf1c",
   "lastOpenFiles": [
-    "rough_drafts/RD.md",
     "_posts/2026-02-25-Exploiting-SEH-Overflows.md",
-    "assets/images/nt_tib_struct.png",
-    "assets/images/teb_struct.png",
     "_posts/2026-02-05-Developing-Syncbreeze-Exploit-P1.md",
-    "assets/images/seh_concept_diagram.png",
-    "assets/images/exception_registration_record_struct.png",
+    "_posts/2026-01-19-THM-Walkthrough-Pyrat.md",
+    "_posts/2026-01-19-SOC-building-part-6.md",
+    "_posts/2026-01-16-SOC-Building-Part-5.md",
+    "_posts/2026-01-16-SOC-Building-Part-4.md",
+    "_posts/2026-01-15-SOC-Building-Part-3.md",
+    "_posts/2026-01-14-SOC-Building-part-1-2.md",
+    "_posts/2026-01-13-SOC-building-part-0.md",
+    "_posts/2026-03-30-AD-Attack-Lab-Part1.md",
+    "assets/images/seh-overflow/seh_first_crash.png",
+    "assets/images/seh-overflow/exception_registration_record_struct.png",
+    "assets/images/seh-overflow/nt_tib_struct.png",
+    "assets/images/seh-overflow/teb_struct.png",
+    "assets/images/seh-overflow/seh_concept_diagram.png",
+    "assets/images/syncbreeze-exploit/jmp_esp_address.png",
+    "assets/images/syncbreeze-exploit/msf-pattern_offsec_example_1.png",
+    "assets/images/syncbreeze-exploit/msf-pattern_create_example_1.png",
+    "assets/images/syncbreeze-exploit/basic_syncbreeze_crash.png",
+    "assets/images/syncbreeze-exploit/buffer_overflow_chart.png",
+    "assets/images/seh-overflow",
+    "assets/images/syncbreeze-exploit",
+    "assets/images/soc-building",
+    "rough_drafts/Lab1 AD Attack SOC Detection.md",
+    "rough_drafts/sed30ib6l",
+    "assets/images/ad-attack-lab",
+    "about.md",
+    "categories.md",
+    "rough_drafts/RD.md",
     "index.md",
     "rough_drafts",
     "2026-02-06-Developing-Syncbreeze-Exploit-P2.md",
-    "categories.md",
-    "about.md",
-    "assets/images/seh_first_crash.png",
     "Test.md",
     "writeups.md",
-    "_posts/2026-01-16-SOC-Building-Part-4.md",
-    "_posts/2026-01-19-THM-Walkthrough-Pyrat.md",
-    "assets/images/msf-pattern_offsec_example_1.png",
-    "assets/images/jmp_esp_address.png",
-    "assets/images/msf-pattern_create_example_1.png",
-    "assets/images/basic_syncbreeze_crash.png",
-    "assets/images/buffer_overflow_chart.png",
-    "_posts/2026-01-19-SOC-building-part-6.md",
-    "_posts/2026-01-16-SOC-Building-Part-5.md",
     "assets/images/Pasted.md",
-    "_posts/2026-01-15-SOC-Building-Part-3.md",
     "assets/images",
     "assets",
-    "_posts/2026-01-14-SOC-Building-part-1-2.md",
     "_posts/Network.md",
-    "_posts/2026-01-13-SOC-building-part-0.md",
     "zz-misc-image-folder",
     "README.md",
     "_posts/2026-01-19-post.md",
     "_data/navigation.yml",
-    "_data",
     "projects.md"
   ]
 }
