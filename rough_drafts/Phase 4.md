@@ -1,0 +1,1 @@
+Now in phase 4, as a final step, we pretend we are an analyst who received 5 alerts in wazuh and must reconstruct everything - working only from logs. 
