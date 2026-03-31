@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-03-30-AD-Attack-Lab-Part1.md",
+                "file": "_posts/2026-03-30-AD-Attack-Lab-Part2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-03-30-AD-Attack-Lab-Part1"
+              "title": "2026-03-30-AD-Attack-Lab-Part2"
             }
           }
         ]
@@ -196,6 +196,20 @@
   },
   "active": "cb197a22290dcf1c",
   "lastOpenFiles": [
+    "rough_drafts/Lab1 AD Attack SOC Detection Part 2.md",
+    "_posts/2026-03-30-AD-Attack-Lab-Part2.md",
+    "rough_drafts/Lab1 AD Attack SOC Detection.md",
+    "assets/images/ad-attack-lab/wazuh_dcsync_attack_logs.png",
+    "assets/images/ad-attack-lab/dcsync_attack_kali.png",
+    "assets/images/ad-attack-lab/asimmons_da_privilege.png",
+    "assets/images/ad-attack-lab/pth_wazuh_results.png",
+    "assets/images/ad-attack-lab/pth_user_logon.png",
+    "assets/images/ad-attack-lab/pass_the_hash_proof.png",
+    "assets/images/ad-attack-lab/generating_hash_for_pth.png",
+    "assets/images/ad-attack-lab/wazuh_as-rep_roasting_logs.png",
+    "assets/images/ad-attack-lab/asimmons_asrep_roast.png",
+    "assets/images/ad-attack-lab/as-rep_roasting_spray.png",
+    "_posts/2026-03-30-AD-Attack-Lab-Part1.md",
     "_posts/2026-02-25-Exploiting-SEH-Overflows.md",
     "_posts/2026-02-05-Developing-Syncbreeze-Exploit-P1.md",
     "_posts/2026-01-19-THM-Walkthrough-Pyrat.md",
@@ -205,21 +219,9 @@
     "_posts/2026-01-15-SOC-Building-Part-3.md",
     "_posts/2026-01-14-SOC-Building-part-1-2.md",
     "_posts/2026-01-13-SOC-building-part-0.md",
-    "_posts/2026-03-30-AD-Attack-Lab-Part1.md",
-    "assets/images/seh-overflow/seh_first_crash.png",
-    "assets/images/seh-overflow/exception_registration_record_struct.png",
-    "assets/images/seh-overflow/nt_tib_struct.png",
-    "assets/images/seh-overflow/teb_struct.png",
-    "assets/images/seh-overflow/seh_concept_diagram.png",
-    "assets/images/syncbreeze-exploit/jmp_esp_address.png",
-    "assets/images/syncbreeze-exploit/msf-pattern_offsec_example_1.png",
-    "assets/images/syncbreeze-exploit/msf-pattern_create_example_1.png",
-    "assets/images/syncbreeze-exploit/basic_syncbreeze_crash.png",
-    "assets/images/syncbreeze-exploit/buffer_overflow_chart.png",
     "assets/images/seh-overflow",
     "assets/images/syncbreeze-exploit",
     "assets/images/soc-building",
-    "rough_drafts/Lab1 AD Attack SOC Detection.md",
     "rough_drafts/sed30ib6l",
     "assets/images/ad-attack-lab",
     "about.md",

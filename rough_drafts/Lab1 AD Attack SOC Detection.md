@@ -1,84 +1,127 @@
-# Lab 1: Active Directory Attack Chain → SOC Detection → Windows Forensics
+# Phase 2
 
-## Setting the Stage
+DCIP: 192.168.93.50
+W10 IP: 192.168.93.155
+Kali IP: 192.168.93.156
+Domain: corp.local
+![[etc_hosts_update.png]]
+# Password spraying
 
-If you're going into SOC work, Active Directory attacks aren't just something you'll read about — they'll show up in your first interview, your first alert queue, and eventually your first real incident. Kerberoasting, AS-REP Roasting, Pass-the-Hash, and DCSync are table-stakes topics. I built this lab to have real hands-on experience with all of them: generating actual attack telemetry, building detection rules from the raw logs, and investigating the aftermath the way an analyst would.
+![[password_spraying_lists.png]]
 
-This first post covers the lab build — getting the environment up, configured, and verified before a single attack runs. Boring? Maybe. But a sloppy lab environment means garbage telemetry, and garbage telemetry means you can't trust your detections.
 
----
+![[kerbrute_password_spray.png]]
+![[netexec_smb_password_spray.png]]
 
-## Infrastructure
+![[wazuh_kerb_pre_auth_failed_logs.png]]![[wazuh_failed_login_attempts.png]]
 
-The setup is intentionally minimal. You don't need complexity here — you need clean telemetry.
+# Kerberoasting
 
-| Machine | Role |
-|---|---|
-| Windows Server 2022 | Domain Controller (`corp.local`) |
-| Windows 10 (22H2) | Victim workstation, domain-joined |
-| Kali Linux | Attacker |
-| Wazuh (existing) | SIEM + detection platform |
+In order for kerberoasting AND asreproasting to work, we had to enable `logall` and `logall_json` which tells wazuh to write every event to `archives.json` regardless of rules. 
 
-All VMs are on an isolated internal network. The Wazuh instance was already running from a previous project, so enrollment was straightforward.
+Then, we had to add rules for kerberos attacks. 4768 and 4769 alerts were arriving, but wazuh had no builkt in rules matching them specifically for attack patterns. So they were never indexed and never discoverable. 
 
----
+Here is the alert:
+``` (clean this code up)
+<group name="windows,kerberos,attack"> <rule id="100100" level="12"> <if_sid>60103</if_sid> <field name="win.system.eventID">^4769$</field> <field name="win.eventdata.ticketEncryptionType">^0x17$</field> <description>Kerberoasting detected: RC4 ticket requested for $(win.eventdata.serviceName) by $(win.eventdata.targetUserName)</description> <mitre> <id>T1558.003</id> </mitre> </rule> <rule id="100101" level="14"> <if_sid>60103</if_sid> <field name="win.system.eventID">^4768$</field> <field name="win.eventdata.preAuthType">^0$</field> <description>AS-REP Roasting detected: Pre-auth not required for $(win.eventdata.targetUserName)</description> <mitre> <id>T1558.004</id> </mitre> </rule> </group>
+```
 
-## Building the Domain
+```EXPLENATION
+Most SIEMs (Splunk, Elastic/ELK, Microsoft Sentinel) work exactly how you described — ingest everything, let the analyst search and hunt freely. The indexer stores all logs and the analyst decides what's interesting.
 
-After promoting Windows Server 2022 to a Domain Controller for `corp.local`, the first task was creating a realistic OU structure and user population. A flat domain with no structure doesn't reflect anything you'd find in a real environment, and it also makes it harder to simulate targeted attacks against specific user groups.
+Wazuh is architecturally different and somewhat unusual. It was originally built as a **HIDS (Host Intrusion Detection System)** — not a SIEM. Its primary design is rule-based alerting first, log storage second. So by default:
 
-I created three OUs — `IT`, `Finance`, and `HR` — and populated them with a mix of dummy user accounts. The goal wasn't a perfect simulation; it was enough realistic structure to make attack targeting meaningful.
+- Events that match a rule → `wazuh-alerts-*` → visible in Discover
+- Events that don't match a rule → discarded entirely unless `logall_json: yes`
 
-![[assets/images/ad-attack-lab/ou_tree_creation.png]]
+Even with `logall_json` enabled, the raw archives go into `wazuh-archives-*` which **isn't set up as a searchable index pattern by default** in the dashboard. So analysts effectively can't freely hunt across all logs without extra configuration.
 
-## Planting the Attack Targets
+The proper fix for your use case is two things:
 
-### Kerberoastable Service Accounts
+**1. Add `wazuh-archives-*` as an index pattern** in Dashboard Management → Index Patterns, so you can search ALL logs freely regardless of rules.
 
-Kerberoasting works by requesting Kerberos service tickets (TGS) for accounts that have Service Principal Names (SPNs) registered. Any domain user can request these tickets, and if the account uses RC4 encryption, the ticket is crackable offline with hashcat. Real environments are full of old service accounts with SPNs and weak passwords — this is not an exotic attack.
+**2. Keep building custom rules** for detections you want alerted on.
+```
 
-I registered SPNs for two service accounts: `svc_sql` (simulating a SQL service) and `svc_backup` (simulating a backup service). Both were given weak passwords.
 
-![[assets/images/ad-attack-lab/setting_kerberoastable_users.png]]
+![[kerberoast_svc_sql_user.png]]
+![[kerberoast_hashes.png]]
 
-The `setspn -A` command registers the SPN, and `setspn -L` confirms it took. Both accounts now show up as valid Kerberoasting targets when enumerated from the attacker machine.
+![[wazuh_kerberoasting_logs.png]]
+![[kerberoast_svc_sql_proof.png]]
 
-### AS-REP Roastable Account
 
-AS-REP Roasting targets accounts that have Kerberos pre-authentication disabled. When pre-auth is off, anyone can request an AS-REP for that account without needing to prove who they are first — and that response contains an encrypted blob crackable offline.
+# Asreproasting
 
-For user `asimmons`, I checked "Do not require Kerberos preauthentication" in the account properties.
+![[as-rep_roasting_spray.png]]
+![[wazuh_as-rep_roasting_logs.png]]
+![[asimmons_asrep_roast.png]]
+# Pass the hash
 
-![[assets/images/ad-attack-lab/setting_asreproastable_user.png]]
+![[generating_hash_for_pth.png]]
 
-This is a misconfiguration that still exists in real environments, usually on legacy service accounts or accounts that were set up that way for a specific application and never cleaned up.
+![[pass_the_hash_proof.png]]
+![[pth_wazuh_results.png]]
 
----
+![[pth_user_logon.png]]
 
-## Sysmon + Wazuh Agent Enrollment
 
-With the domain built and attack targets in place, the next step was getting visibility before touching the attack phase. Running attacks before your logging is confirmed is how you end up with incomplete evidence and detection rules that don't fire the way you expect.
+# DCSync attack
 
-I deployed Sysmon on both the DC and the workstation using [SwiftOnSecurity's config](https://github.com/SwiftOnSecurity/sysmon-config). This config is well-maintained and covers the event types that matter most for this lab: process creation, network connections, file creation, and registry modifications.
+First we have to give a user Domain Admin privileges, for this we gave asimmons
 
-Both machines were then enrolled as Wazuh agents.
+Here is the rule file to retrieve the logs in the discover dashboard
 
-![[assets/images/ad-attack-lab/showing_wazuh_agents_connected.png]]
+```
+<!-- Local rules -->
+<!-- Modify it at your will. -->
+<!-- Copyright (C) 2015, Wazuh Inc. -->
 
-The Wazuh dashboard shows both agents active — the Windows Server 2022 DC and the Windows 10 workstation — both reporting in and healthy.
+<group name="local,syslog,sshd,">
+  <rule id="100001" level="5">
+    <if_sid>5716</if_sid>
+    <srcip>1.1.1.1</srcip>
+    <description>sshd: authentication failed from IP 1.1.1.1.</description>
+    <group>authentication_failed,pci_dss_10.2.4,pci_dss_10.2.5,</group>
+  </rule>
+</group>
 
----
+<group name="windows,kerberos,attack">
+  <rule id="100100" level="12">
+    <if_sid>60103</if_sid>
+    <field name="win.system.eventID">^4769$</field>
+    <field name="win.eventdata.ticketEncryptionType">^0x17$</field>
+    <description>Kerberoasting detected: RC4 ticket requested for $(win.eventdata.serviceName) by $(win.eventdata.targetUserName)</description>
+    <mitre>
+      <id>T1558.003</id>
+    </mitre>
+  </rule>
 
-## Baseline Check: Confirming Logs Flow Before Attacking
+  <rule id="100101" level="14">
+    <if_sid>60103</if_sid>
+    <field name="win.system.eventID">^4768$</field>
+    <field name="win.eventdata.preAuthType">^0$</field>
+    <description>AS-REP Roasting detected: Pre-auth not required for $(win.eventdata.targetUserName)</description>
+    <mitre>
+      <id>T1558.004</id>
+    </mitre>
+  </rule>
 
-Before running any attacks, I verified that security events were actually landing in Wazuh as expected. The specific check was Event ID 4769 — Kerberos service ticket requests — which is the primary detection target for Kerberoasting. If that event doesn't show up cleanly in Wazuh, the detection rules won't have anything to trigger on.
+  <rule id="100102" level="14">
+    <if_sid>60103</if_sid>
+    <field name="win.system.eventID">^4662$</field>
+    <field name="win.eventdata.properties">1131f6aa-9c07-11d1-f79f-00c04fc2dcd2|1131f6ad-9c07-11d1-f79f-00c04fc2dcd2</field>
+    <description>DCSync attack detected: Directory replication requested by $(win.eventdata.subjectUserName)</description>
+    <mitre>
+      <id>T1003.006</id>
+    </mitre>
+  </rule>
+</group>
+```
 
-![[assets/images/ad-attack-lab/testing_wazuh_security_event.png]]
+![[asimmons_da_privilege.png]]
 
-The Wazuh Discover view shows a 4769 event with the expected fields: account name, service name, ticket encryption type. The log pipeline is working. The lab is ready.
 
----
+![[dcsync_attack_kali.png]]
 
-## What's Next
-
-With the environment verified, the next phase is the attack execution — password spray, Kerberoasting, AS-REP Roasting, Pass-the-Hash, and DCSync — all run from Kali, each one confirmed in Wazuh before moving to the next. After that, detection engineering: writing Wazuh rules from the raw logs, mapping to MITRE ATT&CK, and testing them against re-run attacks.
+![[wazuh_dcsync_attack_logs.png]]
