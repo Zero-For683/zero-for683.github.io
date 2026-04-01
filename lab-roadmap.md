@@ -116,7 +116,7 @@ Network: FlareVM on a completely isolated network — no internet routing, no ho
 
 1. **Hashing**: Record MD5, SHA-1, SHA-256. Look up on VirusTotal (from your host machine — not the analysis VM).
 2. **pestudio**: Load the binary. Document: file type, compiler artifact, compilation timestamp (check if it's forged), imported functions (look for `VirtualAlloc`, `CreateRemoteThread`, `WriteProcessMemory`, `WinExec` — all process injection indicators), strings (look for IPs, domains, registry keys, encoded blobs).
-3. **capa**: Run against the binary. It will map capabilities to ATT&CK automatically. Screenshot the output — this goes directly into your report.
+3. **capa**: Run against the binary (`capa.exe <sample> -v`). Normally it maps capabilities to ATT&CK automatically. **Note:** If the binary is AutoIt-compiled (common with Agent Tesla samples), capa will warn that it cannot analyze AutoIt scripts and will produce no ATT&CK technique mappings — this is expected behavior, not a tool failure. Document the AutoIt detection as a finding (T1027.002 — Software Packing/obfuscation), then manually map the behavioral indicators you found in pestudio to ATT&CK techniques. The manual mapping is more valuable in a report because it demonstrates you understand why each technique applies.
 4. **FLOSS**: Extract obfuscated strings that pestudio might miss.
 5. Document everything: file metadata, suspicious imports, suspicious strings, capa findings.
 
