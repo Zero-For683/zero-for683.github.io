@@ -35,3 +35,7 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Scripts with credentials - never commit
+.n8n_beats_fix.py
+*.env

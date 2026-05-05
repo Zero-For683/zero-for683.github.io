@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ecba4f6108dfac1d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2026-04-01-Malware-Triage-Lab-Part2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-04-01-Malware-Triage-Lab-Part2"
-            }
-          },
-          {
             "id": "f466c9826bd02e05",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-04-01-Malware-Triage-Lab-Part3.md",
+                "file": "about.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-04-01-Malware-Triage-Lab-Part3"
+              "title": "about"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -211,21 +196,32 @@
   },
   "active": "f466c9826bd02e05",
   "lastOpenFiles": [
-    "rough_drafts/Lab 2 Phase 3 Dynamic Analysis.md",
+    "categories.md",
+    "writeups.md",
+    "lab-roadmap.md",
+    "_posts/2026-05-04-GOAD-Lab-Setting-Up.md",
+    "Untitled Diagram.drawio.png",
+    "rough_drafts/Lab 3 Network Intrusion PCAP Forensics IDS Rules p1.md",
+    "rough_drafts/2026-05-04-GOAD-PCAP-Lab-Part1.md",
+    "assets/images/goad/suricata-logs-verified.png",
+    "assets/images/goad/wazuh-agents-connected.png",
+    "assets/images/goad/goad-network-diagram.png",
+    "assets/images/goad/goad-lab-topology.png",
+    "assets/images/goad",
+    "Pasted image 20260504174323.png",
+    "NetGOADDiagram.drawio.png",
+    "Pasted image 20260504102400.png",
+    "rough_drafts/Lab 3 Network Intrusion PCAP Forensics IDS Rules p4.md",
+    "rough_drafts/Lab 3 Network Intrusion PCAP Forensics IDS Rules p3.md",
+    "rough_drafts/Lab 3 Network Intrusion PCAP Forensics IDS Rules p2.md",
+    "Pasted image 20260402212218.png",
+    "lab3_setup.py",
+    "_posts/2026-04-01-Malware-Triage-Lab-Part2.md",
     "_posts/2026-04-01-Malware-Triage-Lab-Part3.md",
+    "rough_drafts/Lab 2 Phase 3 Dynamic Analysis.md",
     "assets/images/malware-triage-lab/mitre_attck_mapping.png",
-    "assets/images/malware-triage-lab/petree_minidump_analysis.png",
-    "assets/images/malware-triage-lab/procdump_regsvcs_capture.png",
-    "assets/images/malware-triage-lab/wireshark_tls_handshake_failures.png",
-    "assets/images/malware-triage-lab/inetsim_ipapi_request.png",
-    "assets/images/malware-triage-lab/reaffection_hex_bytes.png",
-    "assets/images/malware-triage-lab/reaffection_file_properties.png",
-    "assets/images/malware-triage-lab/procmon_regsvcs_registry_reads.png",
-    "assets/images/malware-triage-lab/procmon_createfile_activity.png",
-    "assets/images/malware-triage-lab/procmon_process_create_regsvcs.png",
     "regsvcs_malware_analysis.txt",
     "rough_drafts/Lab 2 Phase 1 - malware analysis.md",
-    "_posts/2026-04-01-Malware-Triage-Lab-Part2.md",
     "_posts/2026-04-01-Malware-Triage-Lab-Part1.md",
     "rough_drafts/Lab 2 Phase 2 Static Analysis.md",
     "assets/images/malware-triage-lab",
@@ -241,21 +237,10 @@
     "rough_drafts/attack-playbook.md",
     "rough_drafts/README.md",
     "rough_drafts/Lab1 AD Attack SOC Detection Part 2.md",
-    "rough_drafts/Lab1 AD Attack SOC Detection.md",
-    "rough_drafts/Phase3-4 Guide.md",
-    "_posts/2026-02-25-Exploiting-SEH-Overflows.md",
-    "_posts/2026-02-05-Developing-Syncbreeze-Exploit-P1.md",
-    "_posts/2026-01-19-THM-Walkthrough-Pyrat.md",
-    "_posts/2026-01-19-SOC-building-part-6.md",
-    "_posts/2026-01-16-SOC-Building-Part-5.md",
-    "_posts/2026-01-16-SOC-Building-Part-4.md",
-    "_posts/2026-01-15-SOC-Building-Part-3.md",
     "assets/images/seh-overflow",
     "assets/images/syncbreeze-exploit",
     "assets/images/soc-building",
     "rough_drafts/sed30ib6l",
-    "assets/images/ad-attack-lab",
-    "rough_drafts",
-    "assets/images"
+    "assets/images/ad-attack-lab"
   ]
 }
