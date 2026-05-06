@@ -88,8 +88,7 @@ This takes a while. Here's the full output:
 
 <details>
 <summary>Full nmap output (click to expand)</summary>
-
-```
+<pre><code>
 # Nmap 7.99 scan initiated Wed May  6 15:22:11 2026 as: /usr/lib/nmap/nmap -Pn -sC -sV -p- -oA nmap/nmap_full_network_scan -iL hosts.txt
 Nmap scan report for 192.168.56.10
 Host is up (0.00026s latency).
@@ -169,8 +168,7 @@ PORT      STATE SERVICE       VERSION
 Service Info: Host: BRAAVOS; OS: Windows
 
 # Nmap done at Wed May  6 15:48:35 2026 -- 5 IP addresses (5 hosts up) scanned in 1584.38 seconds
-```
-
+</code></pre>
 </details>
 
 A few things worth pulling out of that output:

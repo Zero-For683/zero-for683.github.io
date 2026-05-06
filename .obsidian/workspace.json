@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 302.5
+    "width": 211.5
   },
   "right": {
     "id": "1ccf6b8defa7bed3",
@@ -194,10 +194,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a671d7bc9d614357",
+  "active": "f466c9826bd02e05",
   "lastOpenFiles": [
-    "rough_drafts/GOAD p2.md",
+    "_posts/2026-05-04-GOAD-Lab-Setting-Up.md",
     "_posts/2026-05-06-GOAD-Lab-Part2.md",
+    "_posts/2026-05-06-GOAD-Lab-Part2.md.tmp.23348.801713784036",
+    "rough_drafts/GOAD p2.md",
     "assets/images/goad/nslookup-kingslanding-verify.png",
     "assets/images/goad/nslookup-srv-dc11-dc12.png",
     "assets/images/goad/nslookup-srv-dc10.png",
@@ -209,7 +211,6 @@
     "assets/images/goad/nxc-smb-sweep.png",
     "assets/images/goad/recon-mindmap-scan-network.png",
     "rough_drafts/Lab 3 Network Intrusion PCAP Forensics IDS Rules p3.md",
-    "_posts/2026-05-04-GOAD-Lab-Setting-Up.md",
     "about.md",
     "categories.md",
     "writeups.md",
@@ -236,11 +237,9 @@
     "_posts/2026-03-31-AD-Attack-Lab-Part4.md",
     "rough_drafts/Phase 4.md",
     "rough_drafts/Part 3.md",
-    "rough_drafts/attack-playbook.md",
     "assets/images/seh-overflow",
     "assets/images/syncbreeze-exploit",
     "assets/images/soc-building",
-    "rough_drafts/sed30ib6l",
-    "assets/images/ad-attack-lab"
+    "rough_drafts/sed30ib6l"
   ]
 }
