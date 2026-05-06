@@ -100,3 +100,7 @@ Here I can run an attack, then go check what Suricata flagged, pull the PCAP, di
 Everything is up: domain provisioned, agents connected, Suricata watching the right interface.
 
 The next posts cover the actual attacks, one phase at a time. After each offensive post comes the defensive side: what the attack left behind in the logs and PCAPs, how it could be detected, and what a realistic response looks like.
+
+
+> NOTE: Throughout the exploitation phase, I will be using OrangeCyberDefense's AD mindmap that you can find here: https://orange-cyberdefense.github.io/ocd-mindmaps/
+> 

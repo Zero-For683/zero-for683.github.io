@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "about.md",
+                "file": "rough_drafts/2026-05-06-GOAD-Lab-Part2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "about"
+              "title": "2026-05-06-GOAD-Lab-Part2"
             }
           }
         ]
@@ -194,32 +194,34 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f466c9826bd02e05",
+  "active": "a671d7bc9d614357",
   "lastOpenFiles": [
+    "rough_drafts/GOAD p2.md",
+    "rough_drafts/2026-05-06-GOAD-Lab-Part2.md",
+    "assets/images/goad/nslookup-kingslanding-verify.png",
+    "assets/images/goad/nslookup-srv-dc11-dc12.png",
+    "assets/images/goad/nslookup-srv-dc10.png",
+    "assets/images/goad/nmcli-interface-details.png",
+    "assets/images/goad/recon-mindmap-find-dc-ip.png",
+    "assets/images/goad/nmap-full-scan-command.png",
+    "assets/images/goad/nmap-hosts-file.png",
+    "assets/images/goad/nmap-host-discovery.png",
+    "assets/images/goad/nxc-smb-sweep.png",
+    "assets/images/goad/recon-mindmap-scan-network.png",
+    "rough_drafts/Lab 3 Network Intrusion PCAP Forensics IDS Rules p3.md",
+    "_posts/2026-05-04-GOAD-Lab-Setting-Up.md",
+    "about.md",
     "categories.md",
     "writeups.md",
     "lab-roadmap.md",
-    "_posts/2026-05-04-GOAD-Lab-Setting-Up.md",
-    "Untitled Diagram.drawio.png",
     "rough_drafts/Lab 3 Network Intrusion PCAP Forensics IDS Rules p1.md",
     "rough_drafts/2026-05-04-GOAD-PCAP-Lab-Part1.md",
-    "assets/images/goad/suricata-logs-verified.png",
-    "assets/images/goad/wazuh-agents-connected.png",
-    "assets/images/goad/goad-network-diagram.png",
-    "assets/images/goad/goad-lab-topology.png",
     "assets/images/goad",
-    "Pasted image 20260504174323.png",
-    "NetGOADDiagram.drawio.png",
-    "Pasted image 20260504102400.png",
     "rough_drafts/Lab 3 Network Intrusion PCAP Forensics IDS Rules p4.md",
-    "rough_drafts/Lab 3 Network Intrusion PCAP Forensics IDS Rules p3.md",
-    "rough_drafts/Lab 3 Network Intrusion PCAP Forensics IDS Rules p2.md",
-    "Pasted image 20260402212218.png",
     "lab3_setup.py",
     "_posts/2026-04-01-Malware-Triage-Lab-Part2.md",
     "_posts/2026-04-01-Malware-Triage-Lab-Part3.md",
     "rough_drafts/Lab 2 Phase 3 Dynamic Analysis.md",
-    "assets/images/malware-triage-lab/mitre_attck_mapping.png",
     "regsvcs_malware_analysis.txt",
     "rough_drafts/Lab 2 Phase 1 - malware analysis.md",
     "_posts/2026-04-01-Malware-Triage-Lab-Part1.md",
@@ -235,8 +237,6 @@
     "rough_drafts/Phase 4.md",
     "rough_drafts/Part 3.md",
     "rough_drafts/attack-playbook.md",
-    "rough_drafts/README.md",
-    "rough_drafts/Lab1 AD Attack SOC Detection Part 2.md",
     "assets/images/seh-overflow",
     "assets/images/syncbreeze-exploit",
     "assets/images/soc-building",
