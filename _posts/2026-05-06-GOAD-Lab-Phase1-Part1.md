@@ -1,5 +1,5 @@
 ---
-title: GOAD - Recon & Network Enumeration
+title: GOAD Phase 1 - Recon & Network Enumeration
 categories:
   - homelab
 tags:

@@ -1,11 +1,11 @@
 ---
-title: GOAD - Phase 1 Detection: Wazuh and Suricata Analysis
+title: "GOAD Phase 1 - Detection: Wazuh and Suricata Analysis"
 categories:
   - homelab
 tags:
   - active-directory
   - blue-team
-  - detection
+  - detection-engineering
   - wazuh
   - suricata
   - goad
