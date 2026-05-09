@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-05-06-GOAD-Lab-Phase1.md",
+                "file": "_posts/2026-05-06-GOAD-Lab-Phase1-Part1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-06-GOAD-Lab-Phase1"
+              "title": "2026-05-06-GOAD-Lab-Phase1-Part1"
             }
           }
         ]
@@ -210,10 +210,10 @@
   },
   "active": "f466c9826bd02e05",
   "lastOpenFiles": [
-    "rough_drafts/GOAD Phase 1 part 2 - Detection.md",
+    "_posts/2026-05-06-GOAD-Lab-Phase1-Part1.md",
     "_posts/2026-05-08-GOAD-Lab-Phase1-Part2.md",
+    "rough_drafts/GOAD Phase 1 part 2 - Detection.md",
     "homelab/2026/05/06/GOAD-Lab-Phase1.html.md",
-    "_posts/2026-05-06-GOAD-Lab-Phase1.md",
     "homelab/2026/05/06",
     "homelab/2026/05",
     "homelab/2026",
