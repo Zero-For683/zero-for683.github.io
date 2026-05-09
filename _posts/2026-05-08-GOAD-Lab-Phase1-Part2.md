@@ -13,7 +13,7 @@ tags:
   - soc
 ---
 
-The [previous post](https://zero-for683.github.io/homelab/2026/05/06/GOAD-Lab-Part2.html) covered the recon phase: the NXC SMB sweep, the full nmap port scan, DC discovery, and getting Kali configured to speak Kerberos. This post flips to the defensive side. What did those scans actually look like in Wazuh and Suricata? What fired, what didn't, and what would break against a more careful attacker?
+The [previous post](https://zero-for683.github.io/homelab/2026/05/06/GOAD-Lab-Phase1-Part1.html) covered the recon phase: the NXC SMB sweep, the full nmap port scan, DC discovery, and getting Kali configured to speak Kerberos. This post flips to the defensive side. What did those scans actually look like in Wazuh and Suricata? What fired, what didn't, and what would break against a more careful attacker?
 
 This is the kind of analysis a SOC analyst does after an incident: starting from known attacker behavior and working backward to figure out what the tools caught, what they missed, and what detection gaps need to be addressed.
 
