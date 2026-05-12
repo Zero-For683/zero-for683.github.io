@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2026-05-08-GOAD-Lab-Phase1-Part2.md",
+                "file": "_posts/2026-05-12-GOAD-Lab-Phase1-Part3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-08-GOAD-Lab-Phase1-Part2"
+              "title": "2026-05-12-GOAD-Lab-Phase1-Part3"
             }
           },
           {
@@ -208,8 +208,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f466c9826bd02e05",
+  "active": "a671d7bc9d614357",
   "lastOpenFiles": [
+    "rough_drafts/GOAD Phase 1 part 3.md",
+    "_posts/2026-05-12-GOAD-Lab-Phase1-Part3.md",
+    "assets/images/goad/nxc-smb-castelblack-jonsnow.png",
+    "assets/images/goad/nxc-smb-shares-jonsnow-subnet.png",
+    "assets/images/goad/getuserspns-kerberoasting.png",
+    "assets/images/goad/getadusers-north-domain.png",
+    "assets/images/goad/nxc-password-spray-hodor.png",
+    "assets/images/goad/hashcat-asrep-cracked.png",
+    "assets/images/goad/getnpusers-brandon-stark-hash.png",
+    "assets/images/goad/recon-mindmap-asreproast.png",
+    "assets/images/goad/nxc-smb-guest-shares.png",
+    "assets/images/goad/nxc-smb-anonymous-access.png",
     "_posts/2026-05-06-GOAD-Lab-Phase1-Part1.md",
     "_posts/2026-05-08-GOAD-Lab-Phase1-Part2.md",
     "rough_drafts/GOAD Phase 1 part 2 - Detection.md",
@@ -218,19 +230,9 @@
     "homelab/2026/05",
     "homelab/2026",
     "homelab",
-    "assets/images/goad/evebox-events-port-scan-flows.png",
-    "assets/images/goad/evebox-alerts-nmap-rdp-scan.png",
-    "assets/images/goad/wazuh-nmap-workstation-name-logs.png",
-    "assets/images/goad/wazuh-pth-alerts-nxc-sweep.png",
-    "Pasted image 20260508192807.png",
-    "Pasted image 20260508192744.png",
-    "Pasted image 20260508172047.png",
-    "Pasted image 20260508141732.png",
     "_posts/2026-05-04-GOAD-Lab-Setting-Up.md",
     "_posts/2026-05-06-GOAD-Lab-Part2.md.tmp.23348.801713784036",
     "rough_drafts/GOAD p2.md",
-    "assets/images/goad/nslookup-kingslanding-verify.png",
-    "assets/images/goad/nslookup-srv-dc11-dc12.png",
     "rough_drafts/Lab 3 Network Intrusion PCAP Forensics IDS Rules p3.md",
     "about.md",
     "categories.md",
@@ -253,8 +255,6 @@
     "_posts/2026-03-30-AD-Attack-Lab-Part2.md",
     "rough_drafts/Lab1 AD Attack SOC Detection Part 3.md",
     "rough_drafts/Lab1 AD Attack SOC Detection Part 4.md",
-    "_posts/2026-03-30-AD-Attack-Lab-Part1.md",
-    "_posts/2026-03-31-AD-Attack-Lab-Part3.md",
-    "_posts/2026-03-31-AD-Attack-Lab-Part4.md"
+    "_posts/2026-03-30-AD-Attack-Lab-Part1.md"
   ]
 }
