@@ -1,0 +1,81 @@
+<style>
+/* ── Lightbox overlay ─────────────────────────────────────────────────── */
+#lb-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.88);
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+#lb-overlay.lb-open {
+  display: flex;
+}
+
+/* Image */
+#lb-img {
+  max-width: 90vw;
+  max-height: 88vh;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7);
+  cursor: default;
+  user-select: none;
+}
+
+/* Close button */
+#lb-close {
+  position: fixed;
+  top: 1rem;
+  right: 1.25rem;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.75);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.15s;
+  z-index: 10000;
+}
+#lb-close:hover { color: #fff; }
+
+/* Prev / Next arrows */
+#lb-prev, #lb-next {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.2rem;
+  color: rgba(255, 255, 255, 0.6);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.15s;
+  z-index: 10000;
+  user-select: none;
+  line-height: 1;
+}
+#lb-prev { left: 0.5rem; }
+#lb-next { right: 0.5rem; }
+#lb-prev:hover, #lb-next:hover { color: #fff; }
+#lb-prev.lb-hidden, #lb-next.lb-hidden { display: none; }
+
+/* Counter */
+#lb-counter {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+/* Cursor hint on content images */
+.page__content img { cursor: zoom-in; }
+</style>

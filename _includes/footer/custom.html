@@ -1,0 +1,82 @@
+<!-- Lightbox -->
+<div id="lb-overlay" role="dialog" aria-modal="true" aria-label="Image lightbox">
+  <button id="lb-close" aria-label="Close">&times;</button>
+  <button id="lb-prev" aria-label="Previous image">&#8249;</button>
+  <img id="lb-img" src="" alt="">
+  <button id="lb-next" aria-label="Next image">&#8250;</button>
+  <div id="lb-counter"></div>
+</div>
+
+<script>
+(function () {
+  var imgs = [], cur = 0;
+  var overlay = document.getElementById('lb-overlay');
+  var lbImg   = document.getElementById('lb-img');
+  var btnClose = document.getElementById('lb-close');
+  var btnPrev  = document.getElementById('lb-prev');
+  var btnNext  = document.getElementById('lb-next');
+  var counter  = document.getElementById('lb-counter');
+
+  function open(index) {
+    cur = index;
+    lbImg.src = imgs[cur].src;
+    lbImg.alt = imgs[cur].alt || '';
+    overlay.classList.add('lb-open');
+    document.body.style.overflow = 'hidden';
+    updateNav();
+  }
+
+  function close() {
+    overlay.classList.remove('lb-open');
+    lbImg.src = '';
+    document.body.style.overflow = '';
+  }
+
+  function updateNav() {
+    btnPrev.classList.toggle('lb-hidden', cur === 0);
+    btnNext.classList.toggle('lb-hidden', cur === imgs.length - 1);
+    counter.textContent = imgs.length > 1 ? (cur + 1) + ' / ' + imgs.length : '';
+  }
+
+  function prev() { if (cur > 0) open(cur - 1); }
+  function next() { if (cur < imgs.length - 1) open(cur + 1); }
+
+  /* Collect images from post content, excluding icons/avatars */
+  document.querySelectorAll('.page__content img').forEach(function (img) {
+    /* skip tiny images (icons, bullets) */
+    if (img.naturalWidth && img.naturalWidth < 60) return;
+    if (img.width && img.width < 60) return;
+    var i = imgs.length;
+    imgs.push(img);
+    img.addEventListener('click', function () { open(i); });
+  });
+
+  /* Also bind after all images have loaded (in case naturalWidth was 0) */
+  window.addEventListener('load', function () {
+    imgs = imgs.filter(function (img) {
+      return !(img.naturalWidth > 0 && img.naturalWidth < 60);
+    });
+    /* Re-index since we may have removed some */
+    imgs.forEach(function (img, i) {
+      img.onclick = function () { open(i); };
+    });
+  });
+
+  /* Close on overlay click (not on img/buttons) */
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) close();
+  });
+
+  btnClose.addEventListener('click', close);
+  btnPrev.addEventListener('click', function (e) { e.stopPropagation(); prev(); });
+  btnNext.addEventListener('click', function (e) { e.stopPropagation(); next(); });
+
+  /* Keyboard nav */
+  document.addEventListener('keydown', function (e) {
+    if (!overlay.classList.contains('lb-open')) return;
+    if (e.key === 'Escape' || e.key === 'Esc') close();
+    if (e.key === 'ArrowLeft')  prev();
+    if (e.key === 'ArrowRight') next();
+  });
+})();
+</script>

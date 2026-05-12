@@ -208,8 +208,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a671d7bc9d614357",
+  "active": "693d53227d932217",
   "lastOpenFiles": [
+    "_includes/footer/custom.html",
+    "_includes/head/custom.html",
+    "_includes/footer",
+    "_includes/head",
+    "_includes",
     "rough_drafts/GOAD Phase 1 part 3.md",
     "_posts/2026-05-12-GOAD-Lab-Phase1-Part3.md",
     "assets/images/goad/nxc-smb-castelblack-jonsnow.png",
@@ -242,19 +247,14 @@
     "rough_drafts/2026-05-04-GOAD-PCAP-Lab-Part1.md",
     "assets/images/goad",
     "rough_drafts/Lab 3 Network Intrusion PCAP Forensics IDS Rules p4.md",
-    "lab3_setup.py",
     "_posts/2026-04-01-Malware-Triage-Lab-Part2.md",
     "_posts/2026-04-01-Malware-Triage-Lab-Part3.md",
     "rough_drafts/Lab 2 Phase 3 Dynamic Analysis.md",
-    "regsvcs_malware_analysis.txt",
     "rough_drafts/Lab 2 Phase 1 - malware analysis.md",
     "_posts/2026-04-01-Malware-Triage-Lab-Part1.md",
     "rough_drafts/Lab 2 Phase 2 Static Analysis.md",
-    "assets/images/malware-triage-lab",
-    "lab-roadmap.md.tmp.5160.1775069609954",
     "_posts/2026-03-30-AD-Attack-Lab-Part2.md",
     "rough_drafts/Lab1 AD Attack SOC Detection Part 3.md",
-    "rough_drafts/Lab1 AD Attack SOC Detection Part 4.md",
-    "_posts/2026-03-30-AD-Attack-Lab-Part1.md"
+    "rough_drafts/Lab1 AD Attack SOC Detection Part 4.md"
   ]
 }
