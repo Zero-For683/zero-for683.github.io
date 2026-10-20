@@ -19,7 +19,7 @@
     BlinkMacSystemFont,
     "Segoe UI",
     sans-serif;
-  font-size: 15px;
+  font-size: 17px;
 }
 :root[data-theme="light"] {
   color-scheme: light;
@@ -110,7 +110,7 @@ button {
   align-items: center;
   gap: 13px;
   color: var(--text);
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 650;
   line-height: 1.3;
   white-space: nowrap;
@@ -131,7 +131,7 @@ button {
 }
 .brand-caption {
   display: block;
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 1.7px;
   color: var(--muted);
@@ -153,7 +153,7 @@ button {
   border-radius: 7px;
   padding: 8px 12px;
   text-align: left;
-  font-size: 12px;
+  font-size: 14px;
 }
 .search-trigger kbd {
   margin-left: auto;
@@ -190,7 +190,7 @@ kbd {
   transform: rotate(-45deg);
 }
 .header-github {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted);
 }
 .header-github span {
@@ -235,14 +235,14 @@ kbd {
   padding: 0 11px 18px;
 }
 .overline {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 650;
   letter-spacing: 1.4px;
   color: var(--muted);
   line-height: 1.6;
 }
 .sidebar-edition {
-  font-size: 8px;
+  font-size: 11px;
   letter-spacing: 0.7px;
   border: 1px solid var(--line);
   border-radius: 3px;
@@ -253,12 +253,12 @@ kbd {
   display: block;
   padding: 7px 11px;
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 15px;
   color: var(--muted);
   margin: 2px 0;
 }
 .nav-symbol {
-  font-size: 16px;
+  font-size: 18px;
   margin-right: 8px;
 }
 .nav-link:hover,
@@ -282,7 +282,7 @@ kbd {
   gap: 7px;
   list-style: none;
   color: var(--text);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   padding: 4px 9px;
 }
@@ -291,7 +291,7 @@ kbd {
 }
 .nav-group summary:before {
   content: "›";
-  font-size: 17px;
+  font-size: 19px;
   color: var(--muted);
   transform: rotate(0deg);
   width: 10px;
@@ -302,7 +302,7 @@ kbd {
 .nav-group summary span {
   margin-left: auto;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
 }
 .nav-children {
@@ -312,7 +312,7 @@ kbd {
 }
 .nav-children a {
   display: block;
-  font-size: 11.5px;
+  font-size: 14px;
   line-height: 1.55;
   padding: 7px 9px;
   border-radius: 4px;
@@ -327,32 +327,32 @@ kbd {
   border-top: 1px solid var(--line);
   margin: 28px 10px 0;
   padding-top: 22px;
-  font-size: 11px;
+  font-size: 13px;
 }
 .sidebar-profile strong {
   display: block;
   margin-top: 10px;
-  font-size: 13px;
+  font-size: 15px;
 }
 .sidebar-profile p {
   color: var(--muted);
   margin: 5px 0 12px;
 }
 .sidebar-profile a {
-  font-size: 11px;
+  font-size: 13px;
   margin-right: 18px;
 }
 .main-column {
   min-width: 0;
   max-width: 940px;
   width: 100%;
-  padding: 28px 52px 0;
+  padding: 26px 40px 0;
   margin: 0 auto;
 }
 .breadcrumbs {
   display: flex;
   gap: 10px;
-  font-size: 11px;
+  font-size: 13px;
   color: var(--muted);
   margin-bottom: 35px;
 }
@@ -367,7 +367,7 @@ kbd {
 }
 .article-header > .overline {
   color: var(--accent);
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1.7px;
 }
 .article-header h1 {
@@ -379,7 +379,7 @@ kbd {
   overflow-wrap: anywhere;
 }
 .article-description {
-  font-size: 17px;
+  font-size: 19px;
   color: var(--muted);
   line-height: 1.65;
   max-width: 650px;
@@ -389,28 +389,28 @@ kbd {
   display: flex;
   gap: 12px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 20px;
 }
 .page__content {
-  font-size: 14px;
+  font-size: 17px;
   overflow-wrap: anywhere;
 }
 .page__content p {
   margin: 0 0 20px;
 }
 .page__content h2 {
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 650;
   letter-spacing: -0.45px;
   line-height: 1.4;
-  margin: 42px 0 17px;
+  margin: 34px 0 16px;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--line);
   scroll-margin-top: 100px;
 }
 .page__content h3 {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   margin: 28px 0 12px;
   scroll-margin-top: 100px;
@@ -451,7 +451,7 @@ h3:hover .heading-anchor,
   margin: 24px 0;
 }
 .page__content figcaption {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted);
   text-align: center;
 }
@@ -476,7 +476,7 @@ h3:hover .heading-anchor,
   max-width: 100%;
   overflow-x: auto;
   margin: 24px 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 .page__content th,
 .page__content td {
@@ -505,7 +505,7 @@ h3:hover .heading-anchor,
   border: 1px solid var(--line);
   border-radius: 7px;
   line-height: 1.75;
-  font-size: 12px;
+  font-size: 14px;
   margin: 22px 0;
 }
 .page__content pre code {
@@ -558,7 +558,7 @@ h3:hover .heading-anchor,
   border-radius: 4px;
   background: var(--raised);
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
   padding: 3px 8px;
 }
 .intro-note {
@@ -570,28 +570,28 @@ h3:hover .heading-anchor,
   margin: 30px 0 36px;
 }
 .note-label {
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1.6px;
   color: var(--accent);
   font-weight: 650;
 }
 .intro-note p:first-of-type {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 550;
   color: var(--text);
   margin: 7px 0 12px;
 }
 .intro-note p {
   color: var(--muted);
-  font-size: 13px;
-  line-height: 1.8;
+  font-size: 15px;
+  line-height: 1.7;
   margin-bottom: 18px;
 }
 .inline-links {
   display: flex;
   gap: 22px;
   flex-wrap: wrap;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
 }
 .inline-links a:first-child {
@@ -622,26 +622,26 @@ h3:hover .heading-anchor,
   text-decoration: none;
 }
 .topic-number {
-  font-size: 8px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 1.1px;
   color: var(--muted);
 }
 .page__content .topic-card h3 {
-  font-size: 17px;
+  font-size: 19px;
   margin: 12px 0 9px;
   letter-spacing: -0.3px;
 }
 .page__content .topic-card p {
-  font-size: 12px;
-  line-height: 1.8;
+  font-size: 14px;
+  line-height: 1.7;
   color: var(--muted);
   margin-bottom: 20px;
 }
 .card-link {
   margin-top: auto;
   color: var(--accent);
-  font-size: 11px;
+  font-size: 13px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -666,17 +666,17 @@ h3:hover .heading-anchor,
   color: var(--accent);
 }
 .page__content .article-row h3 {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 550;
   margin: 5px 0 7px;
   line-height: 1.65;
 }
 .article-row .overline {
-  font-size: 8px;
+  font-size: 11px;
   letter-spacing: 1.1px;
 }
 .article-row time {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
 }
 .row-arrow {
@@ -684,7 +684,7 @@ h3:hover .heading-anchor,
 }
 .text-link {
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   margin: 4px 0 12px;
 }
 .cat-pills {
@@ -697,7 +697,7 @@ h3:hover .heading-anchor,
   padding: 6px 12px;
   border: 1px solid var(--line);
   border-radius: 5px;
-  font-size: 11px;
+  font-size: 13px;
   color: var(--text);
 }
 .cat-pill span {
@@ -722,7 +722,7 @@ h3:hover .heading-anchor,
   scrollbar-width: thin;
 }
 .page-outline > .outline-sticky > .overline {
-  font-size: 9px;
+  font-size: 12px;
 }
 #page-toc {
   border-left: 1px solid var(--line);
@@ -730,7 +730,7 @@ h3:hover .heading-anchor,
 }
 #page-toc a {
   display: block;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.6;
   padding: 5px 0 5px 14px;
   color: var(--muted);
@@ -738,7 +738,7 @@ h3:hover .heading-anchor,
   margin-left: -1px;
 }
 #page-toc a.subheading {
-  font-size: 10px;
+  font-size: 12px;
   padding-left: 24px;
 }
 #page-toc a.active {
@@ -752,27 +752,27 @@ h3:hover .heading-anchor,
 .outline-note {
   border-top: 1px solid var(--line);
   padding-top: 22px;
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
 }
 .outline-note .overline {
-  font-size: 8px;
+  font-size: 11px;
   letter-spacing: 1px;
 }
 .outline-note p {
   margin: 10px 0 14px;
 }
 .outline-note a {
-  font-size: 10px;
+  font-size: 12px;
 }
 .article-footer {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   border-top: 1px solid var(--line);
-  margin-top: 55px;
+  margin-top: 40px;
   padding: 22px 0 28px;
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
 }
 .article-footer a {
@@ -789,7 +789,7 @@ h3:hover .heading-anchor,
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: 18px;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--text);
 }
 .page-pagination a:hover {
@@ -799,7 +799,7 @@ h3:hover .heading-anchor,
 .page-pagination small {
   display: block;
   color: var(--muted);
-  font-size: 8px;
+  font-size: 11px;
   letter-spacing: 1px;
   margin-bottom: 8px;
 }
@@ -821,7 +821,7 @@ dialog::backdrop {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 600;
   gap: 15px;
 }
@@ -833,10 +833,10 @@ dialog::backdrop {
   border-radius: 5px;
   padding: 12px;
   margin-top: 18px;
-  font-size: 14px;
+  font-size: 17px;
 }
 #search-status {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--muted);
   margin: 15px 0;
 }
@@ -850,12 +850,12 @@ dialog::backdrop {
   border-radius: 5px;
   padding: 12px;
   background: var(--raised);
-  font-size: 13px;
+  font-size: 15px;
 }
 #search-results small {
   display: block;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
   margin-bottom: 5px;
 }
 .search-hint {
@@ -865,7 +865,7 @@ dialog::backdrop {
   border-top: 1px solid var(--line);
   padding-top: 14px;
   margin-top: 20px;
-  font-size: 10px;
+  font-size: 12px;
   color: var(--muted);
 }
 @media (min-width: 1550px) {
@@ -928,15 +928,15 @@ dialog::backdrop {
     gap: 12px;
   }
   .brand {
-    font-size: 13px;
+    font-size: 15px;
     gap: 10px;
   }
   .brand-caption {
-    font-size: 7px;
+    font-size: 9px;
     letter-spacing: 1.2px;
   }
   .monogram {
-    font-size: 23px;
+    font-size: 25px;
     padding-right: 10px;
   }
   .header-actions {
@@ -982,16 +982,16 @@ dialog::backdrop {
   }
   .breadcrumbs {
     margin-bottom: 30px;
-    font-size: 10px;
+    font-size: 12px;
   }
   .article-header h1 {
     font-size: 34px;
   }
   .article-description {
-    font-size: 16px;
+    font-size: 18px;
   }
   .page__content {
-    font-size: 14px;
+    font-size: 17px;
   }
   .intro-note {
     padding: 20px;
@@ -1003,13 +1003,13 @@ dialog::backdrop {
     margin-right: 0;
   }
   .article-footer {
-    font-size: 9px;
+    font-size: 12px;
   }
   .topic-card {
     padding: 20px;
   }
   .page__content h2 {
-    font-size: 22px;
+    font-size: 24px;
   }
   .page-pagination {
     grid-template-columns: 1fr;
@@ -1034,7 +1034,7 @@ dialog::backdrop {
     gap: 5px;
   }
   .search-hint {
-    font-size: 9px;
+    font-size: 12px;
   }
   .brand-caption {
     letter-spacing: 0.8px;
@@ -1086,4 +1086,18 @@ dialog::backdrop {
   }
 }
 
-.nav-children a.topic-archive-link { color: var(--accent); font-size: 10px; margin-top: 8px; }
+.nav-children a.topic-archive-link { color: var(--accent); font-size: 12px; margin-top: 8px; }
+
+/* Keep the larger type comfortable on narrow screens. */
+@media (max-width: 760px) {
+  .brand-caption { font-size: 9px; letter-spacing: .55px; }
+  .brand { font-size: 15px; }
+}
+@media (max-width: 440px) {
+  .site-header { padding: 0 12px; gap: 8px; }
+  .brand { gap: 8px; font-size: 14px; }
+  .brand-caption { font-size: 8px; letter-spacing: .4px; }
+  .header-actions { gap: 6px; }
+  .header-actions .icon-button, .search-trigger { width: 28px; height: 32px; }
+  .monogram { padding-right: 8px; }
+}
