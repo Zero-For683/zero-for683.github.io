@@ -1,0 +1,9 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "toc": "checkbox",
+    "toc_sticky": "checkbox"
+  }
+}

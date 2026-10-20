@@ -1,0 +1,79 @@
+<dialog id="image-viewer" aria-label="Article image viewer">
+  <button id="viewer-close" aria-label="Close image viewer">×</button
+  ><button id="viewer-prev" aria-label="Previous image">‹</button
+  ><img id="viewer-image" alt="" /><button
+    id="viewer-next"
+    aria-label="Next image"
+  >
+    ›</button
+  ><span id="viewer-counter" role="status"></span>
+</dialog>
+
+<script>
+  (() => {
+    const viewer = document.getElementById("image-viewer"),
+      image = document.getElementById("viewer-image");
+
+    const images = [...document.querySelectorAll(".page__content img")];
+    let current = 0,
+      returnFocus;
+
+    function show(index) {
+      current = index;
+      image.src = images[index].currentSrc || images[index].src;
+      image.alt = images[index].alt || "Article image";
+      document.getElementById("viewer-prev").disabled = index === 0;
+      document.getElementById("viewer-next").disabled =
+        index === images.length - 1;
+      document.getElementById("viewer-counter").textContent =
+        `${index + 1} / ${images.length}`;
+    }
+
+    images.forEach((img, index) => {
+      img.classList.add("image-zoom");
+      img.tabIndex = 0;
+      img.setAttribute("role", "button");
+      img.setAttribute(
+        "aria-label",
+        `Enlarge image: ${img.alt || "article screenshot"}`,
+      );
+      const open = (e) => {
+        e.preventDefault();
+        returnFocus = img;
+        show(index);
+        viewer.showModal();
+      };
+      img.addEventListener("click", open);
+      img.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") open(e);
+      });
+    });
+
+    document
+      .getElementById("viewer-close")
+      .addEventListener("click", () => viewer.close());
+
+    document.getElementById("viewer-prev").addEventListener("click", () => {
+      if (current > 0) show(current - 1);
+    });
+
+    document.getElementById("viewer-next").addEventListener("click", () => {
+      if (current < images.length - 1) show(current + 1);
+    });
+
+    viewer.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft" && current > 0) show(current - 1);
+      if (e.key === "ArrowRight" && current < images.length - 1)
+        show(current + 1);
+    });
+
+    viewer.addEventListener("click", (e) => {
+      if (e.target === viewer) viewer.close();
+    });
+
+    viewer.addEventListener("close", () => {
+      image.removeAttribute("src");
+      if (returnFocus) returnFocus.focus();
+    });
+  })();
+</script>

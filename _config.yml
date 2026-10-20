@@ -1,0 +1,54 @@
+title: Gabriel Barbir
+description: Cybersecurity Professional • OSCP • U.S. Navy Veteran — Detection engineering, threat hunting, and SOC operations.
+url: https://zero-for683.github.io
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+masthead_title: "Gabriel Barbir"
+breadcrumbs: true
+words_per_minute: 200
+
+# Enable header nav and point it at the "main" menu below
+header:
+  nav: main
+
+author:
+  name: "Gabriel Barbir"
+  bio: "Cybersecurity Professional • OSCP • U.S. Navy Veteran"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/gabriel-barbir/"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/Zero-For683"
+
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+      toc: true
+      toc_sticky: true
+
+# Local documentation layouts; compatible with GitHub Pages.
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - rough_drafts
+  - vendor
+  - .obsidian

@@ -1,0 +1,6 @@
+---
+layout: single
+---
+<div class="cat-pills"><a class="cat-pill" href="{{ '/categories/' | relative_url }}">← All topics</a></div>
+<h2>All articles</h2>
+<div class="article-list">{% assign posts = site.categories[page.topic] | sort: 'path' | sort: 'date' | reverse %}{% for post in posts %}<a class="article-row" href="{{ post.url | relative_url }}"><div><h3>{{ post.title }}</h3><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%B %-d, %Y' }}</time></div><span class="row-arrow" aria-hidden="true">→</span></a>{% endfor %}</div>

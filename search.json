@@ -1,0 +1,11 @@
+---
+layout: null
+permalink: /search.json
+---
+[
+{% for post in site.posts %}{"title":{{ post.title | jsonify }},"url":{{ post.url | relative_url | jsonify }},"category":{{ post.categories | join: ' ' | jsonify }},"tags":{{ post.tags | join: ' ' | jsonify }},"text":{{ post.content | markdownify | strip_html | normalize_whitespace | jsonify }}},{% endfor %}
+{"title":"About Gabriel Barbir","url":{{ '/about/' | relative_url | jsonify }},"category":"Profile","text":{{ site.author.bio | jsonify }}},
+{"title":"Projects — Atlas Industrial SOC","url":{{ '/projects/' | relative_url | jsonify }},"category":"Projects","text":"Wazuh Docker PostgreSQL Tryton ERP Vaultwarden Ubuntu Windows Server"},
+{"title":"All writeups","url":{{ '/writeups/' | relative_url | jsonify }},"category":"Navigation","text":"Browse all articles"},
+{"title":"Topics","url":{{ '/categories/' | relative_url | jsonify }},"category":"Navigation","text":"Browse by category"}
+]

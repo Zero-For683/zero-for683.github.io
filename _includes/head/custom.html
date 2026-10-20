@@ -1,0 +1,63 @@
+<style>
+  #image-viewer {
+    border: 0;
+    padding: 45px 50px;
+    background: transparent;
+    max-width: 100vw;
+    width: 100vw;
+    max-height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    box-shadow: none;
+  }
+
+  #image-viewer::backdrop {
+    background: rgba(0, 0, 0, 0.94);
+  }
+
+  #image-viewer[open] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #viewer-image {
+    max-width: 100%;
+    max-height: calc(100dvh - 110px);
+    object-fit: contain;
+  }
+
+  #image-viewer button {
+    position: absolute;
+    background: #202226;
+    color: #fff;
+    border: 1px solid #60636b;
+    border-radius: 5px;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  #viewer-close {
+    right: 16px;
+    top: 15px;
+  }
+  #viewer-prev {
+    left: 8px;
+    top: 50%;
+  }
+  #viewer-next {
+    right: 8px;
+    top: 50%;
+  }
+  #viewer-counter {
+    position: absolute;
+    bottom: 12px;
+    color: #bbb;
+    font-size: 12px;
+  }
+  .image-zoom {
+    cursor: zoom-in;
+  }
+</style>

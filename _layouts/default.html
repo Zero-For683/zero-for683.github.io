@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+{% seo %}
+{% feed_meta %}
+<link rel="icon" href="{{ '/assets/images/monogram.svg' | relative_url }}" type="image/svg+xml">
+<link rel="stylesheet" href="{{ '/assets/css/knowledge.css' | relative_url }}">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('gb-theme')||'dark'}catch(e){}</script>
+{% include head/custom.html %}
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<a class="brand" href="{{ '/' | relative_url }}"><span class="monogram">GB<span>.</span></span><span>Gabriel Barbir<span class="brand-caption">CYBERSECURITY PROFESSIONAL</span></span></a>
+<div class="header-actions"><button class="search-trigger" aria-label="Search the knowledge base" aria-haspopup="dialog"><span class="search-icon" aria-hidden="true"></span><span>Search the knowledge base</span><kbd>Ctrl K</kbd></button><a class="header-github" href="https://github.com/Zero-For683">GitHub <span aria-hidden="true">↗</span></a><button class="theme-toggle icon-button" aria-label="Switch color theme">◐</button><button class="menu-toggle icon-button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-sidebar">☰</button></div>
+</header>
+<div class="site-shell">
+<aside class="site-sidebar" id="site-sidebar" aria-label="Site navigation">
+<div class="sidebar-top"><span class="overline">BROWSE & EXPLORE</span></div>
+<nav aria-label="Main navigation"><a class="nav-link{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}><span class="nav-symbol" aria-hidden="true">⌂</span> Introduction</a>
+{% for item in site.data.navigation.main %}<a class="nav-link{% if page.url == item.url %} active{% endif %}" href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>{% endfor %}
+{% assign groups = site.categories | sort %}
+{% for group in groups %}<details class="nav-group" open><summary>{{ group[0] | replace: '-', ' ' | capitalize }} <span>{{ group[1].size }}</span></summary><div class="nav-children">{% assign entries = group[1] | sort: 'path' | sort: 'date' | reverse %}{% for entry in entries limit:3 %}<a href="{{ entry.url | relative_url }}"{% if page.url == entry.url %} class="active" aria-current="page"{% endif %}>{{ entry.title | escape }}</a>{% endfor %}<a class="topic-archive-link" href="{{ "/topics/" | append: group[0] | append: "/" | relative_url }}">View all {{ group[1].size }} articles →</a></div></details>{% endfor %}
+</nav>
+<div class="sidebar-profile"><span class="overline">ABOUT THE AUTHOR</span><strong>Gabriel Barbir</strong><p>Cybersecurity Professional<br>OSCP · U.S. Navy Veteran</p><div><a href="https://www.linkedin.com/in/gabriel-barbir/">LinkedIn ↗</a><a href="https://github.com/Zero-For683">GitHub ↗</a></div></div>
+</aside>
+<main id="main" class="main-column" tabindex="-1">
+<div class="breadcrumbs"><a href="{{ '/' | relative_url }}">Knowledge base</a><span aria-hidden="true">/</span><span>{% if page.url == '/' %}Introduction{% elsif page.collection == 'posts' %}{{ page.categories.first | replace: '-', ' ' | capitalize }}{% else %}{{ page.title }}{% endif %}</span></div>
+<article><header class="article-header"><div class="overline">{% if page.collection == 'posts' %}TECHNICAL WRITEUP{% elsif page.url == '/' %}DOCUMENTATION & RESEARCH{% else %}GABRIEL BARBIR / {{ page.title | upcase }}{% endif %}</div><h1>{{ page.title | escape }}</h1>{% if page.description %}<p class="article-description">{{ page.description }}</p>{% endif %}{% if page.collection == 'posts' %}<div class="article-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time><span>·</span><span>{{ content | number_of_words | divided_by: 200 | plus: 1 }} min read</span></div>{% endif %}</header>
+<div class="page__content">{{ content }}</div>
+</article>
+{% if page.collection == 'posts' %}<nav class="page-pagination" aria-label="Related articles">{% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><small>PREVIOUS ARTICLE</small>{{ page.previous.title }}</a>{% endif %}{% if page.next %}<a href="{{ page.next.url | relative_url }}"><small>NEXT ARTICLE</small>{{ page.next.title }}</a>{% endif %}</nav>{% endif %}
+<footer class="article-footer"><span>Gabriel Barbir · Security engineering & research</span><a href="#main">Back to top ↑</a></footer>
+</main>
+<aside class="page-outline" aria-label="On this page"><div class="outline-sticky"><span class="overline">ON THIS PAGE</span><nav id="page-toc"></nav><div class="outline-note"><span class="overline">LEARN. BUILD. DOCUMENT.</span><p>Hands-on security work, documented from the ground up.</p><a href="{{ '/about/' | relative_url }}">About this knowledge base ↗</a></div></div></aside>
+</div>
+<dialog id="search-dialog" aria-labelledby="search-title"><div class="search-heading"><label id="search-title" for="search-input">Search the knowledge base</label><button class="search-close icon-button" aria-label="Close search">×</button></div><input id="search-input" type="search" placeholder="Search topics, tools, or techniques…" autocomplete="off"><p id="search-status" role="status">Type to search articles and pages.</p><div id="search-results"></div><div class="search-hint">Search titles, tags, and article content <kbd>Esc to close</kbd></div></dialog>
+<script src="{{ '/assets/js/knowledge.js' | relative_url }}" defer data-search-url="{{ '/search.json' | relative_url }}"></script>
+{% include footer/custom.html %}
+</body></html>

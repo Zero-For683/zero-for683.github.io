@@ -1,0 +1,249 @@
+{
+  "main": {
+    "id": "c59cd173791e202a",
+    "type": "split",
+    "children": [
+      {
+        "id": "c0a5c6911690515b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "920fd5cf77caee8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5377244c735eba35",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf2d837ec234923c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a671d7bc9d614357",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e2c8a4f6395edae9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "security, documented",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "aa85fae062efc45b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 266.5
+  },
+  "right": {
+    "id": "1ccf6b8defa7bed3",
+    "type": "split",
+    "children": [
+      {
+        "id": "3be091d1b0e2619a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ba1365f252c92029",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "about.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for about"
+            }
+          },
+          {
+            "id": "0c3f884d05a123b7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "about.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from about"
+            }
+          },
+          {
+            "id": "6702ce1b0058c433",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "11f664074a2e39aa",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "5f0a53ec3542d214",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "about.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of about"
+            }
+          },
+          {
+            "id": "693d53227d932217",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "920fd5cf77caee8d",
+  "lastOpenFiles": [
+    "writeups.md",
+    "about.md",
+    "_posts/2026-01-16-SOC-Building-Part-5.md",
+    "index.md",
+    "projects.md",
+    "README.md",
+    "categories.md",
+    "topics/homelab.md",
+    "topics/blue-teaming.md",
+    "topics/offensive-security.md",
+    "topics/detection-engineering.md",
+    "topics",
+    "_layouts/topic.html",
+    "assets/css/knowledge.css",
+    "assets/js/knowledge.js",
+    "assets/js",
+    "Gemfile",
+    "search.json",
+    "assets/images/monogram.svg",
+    "_layouts/splash.html",
+    "_layouts/single.html",
+    "_layouts/default.html",
+    "_posts/2026-05-06-GOAD-Lab-Phase1-Part1.md",
+    "_posts/2026-05-12-GOAD-Lab-Phase1-Part3.md",
+    "_posts/2026-04-01-Malware-Triage-Lab-Part1.md",
+    "_posts/2026-04-01-Malware-Triage-Lab-Part2.md",
+    "_posts/2026-04-01-Malware-Triage-Lab-Part3.md",
+    "rough_drafts/GOAD Phase 1 part 3.md",
+    "assets/images/goad/nxc-smb-castelblack-jonsnow.png",
+    "assets/images/goad/nxc-smb-shares-jonsnow-subnet.png",
+    "assets/images/goad/getuserspns-kerberoasting.png",
+    "assets/images/goad/getadusers-north-domain.png",
+    "assets/images/goad/nxc-password-spray-hodor.png",
+    "assets/images/goad/hashcat-asrep-cracked.png",
+    "assets/images/goad/getnpusers-brandon-stark-hash.png",
+    "assets/images/goad/recon-mindmap-asreproast.png",
+    "assets/images/goad/nxc-smb-guest-shares.png",
+    "_posts/2026-05-08-GOAD-Lab-Phase1-Part2.md",
+    "rough_drafts/GOAD Phase 1 part 2 - Detection.md",
+    "homelab/2026/05/06/GOAD-Lab-Phase1.html.md",
+    "_posts/2026-05-04-GOAD-Lab-Setting-Up.md",
+    "rough_drafts/GOAD p2.md",
+    "rough_drafts/Lab 3 Network Intrusion PCAP Forensics IDS Rules p3.md",
+    "lab-roadmap.md",
+    "rough_drafts/Lab 3 Network Intrusion PCAP Forensics IDS Rules p1.md",
+    "rough_drafts/2026-05-04-GOAD-PCAP-Lab-Part1.md"
+  ]
+}
